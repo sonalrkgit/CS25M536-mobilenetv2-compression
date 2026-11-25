@@ -1,0 +1,2 @@
+Test top-1 accuracy: 75.52%
+Parameters: 2,236,682  FP32 size: 8.95 MB
