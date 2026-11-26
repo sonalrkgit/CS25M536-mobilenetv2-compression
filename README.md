@@ -1,8 +1,8 @@
 # CS6886W Assignment 2: MobileNet-v2 on CIFAR-10 with from-scratch compression
 
 ## Environment
-- Google Colab, NVIDIA T4 GPU, Python [x.x.x]
-- torch [x.x.x], torchvision [x.x.x], numpy [x.x.x], matplotlib [x.x.x], scikit-learn [x.x.x], wandb 0.28.1
+- Google Colab, NVIDIA T4 GPU, Python [3.13.18]
+- torch [2.14.1+cpu], torchvision [0.29.1+cpu], numpy [2.4.6], matplotlib [3.10.0], scikit-learn [1.6.1], wandb 0.28.1
 - Install: `pip install -r requirements.txt`
 - Seed: 42 (set in train.py via `set_seed`; compression and sweep scripts call `torch.manual_seed(42)`)
 - No compression library is used; all quantization code is in `compress.py`.
