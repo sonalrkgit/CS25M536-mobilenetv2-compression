@@ -202,6 +202,7 @@ if __name__ == '__main__':
     p.add_argument('--act_pct', type=float, default=100.0)
     p.add_argument('--no_clip_search', action='store_true')
     a = p.parse_args()
+    torch.manual_seed(42)
     res = run_compression(a.weights, a.w_bits, a.a_bits, a.first_last_bits, a.dw_bits,
                           a.act_pct, not a.no_clip_search)
     for k, v in res.items():

@@ -1,3 +1,4 @@
+import torch
 import argparse, wandb
 from compress import run_compression
 
@@ -13,6 +14,7 @@ configs = [(8,8),(8,6),(8,4),(6,8),(6,6),(5,8),(4,8),(4,6),(4,4),
 for wb, ab in configs:
     wandb.init(project=a.project, name=f'w{wb}_a{ab}',
                config={'weight_quant_bits': wb, 'activation_quant_bits': ab})
+    torch.manual_seed(42)
     r = run_compression(a.weights, wb, ab)
     wandb.log({'quantized_acc': r['quantized_acc'],
                'baseline_acc': r['baseline_acc'],

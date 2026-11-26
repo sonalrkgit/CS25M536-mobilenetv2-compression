@@ -1,0 +1,7 @@
+Python 3.13.18
+matplotlib                            3.10.0
+numpy                                 2.4.6
+scikit-learn                          1.6.1
+torch                                 2.14.1+cpu
+torchvision                           0.29.1+cpu
+wandb                                 0.28.1
