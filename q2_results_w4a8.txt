@@ -1,0 +1,12 @@
+weight_quant_bits : 4
+activation_quant_bits : 8
+baseline_acc : 93.86
+quantized_acc : 93.28
+baseline_size_mb : 9.083592
+model_size_mb : 1.450716
+compression_ratio : 6.261454343923965
+weight_ratio : 7.489306140213674
+act_ratio : 3.9996272501444405
+act_report : {'layers': 35, 'fp32_bytes': 6008832, 'quant_bytes': 1502348.0, 'ratio': 3.9996272501444405, 'peak_fp32': 589824, 'peak_quant': 147456.0}
+mem_report : {'packed_weights': 1108112, 'weight_scales': 68264, 'fp32_weights': 0, 'bias': 40, 'batchnorm': 273312, 'act_scales': 140, 'metadata': 848, 'total': 1450716}
+base_report : {'packed_weights': 0, 'weight_scales': 0, 'fp32_weights': 8810240, 'bias': 40, 'batchnorm': 273312, 'act_scales': 0, 'metadata': 0, 'total': 9083592}
